@@ -17,9 +17,10 @@
       href="node_modules/@splidejs/splide/dist/css/splide.min.css"
     />
     <!-- estilos tailwind -->
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="bg-[#202023]">
+    <!-- header -->
     <header>
       <!-- navbar -->
       <nav class="font-[Montserrat]">
@@ -28,7 +29,7 @@
         >
           <div class="flex flex-grow">
             <a href="#">
-              <img src="./img/Group 14.svg" alt="logo" />
+              <img src="./img/logo.svg" alt="logo" />
             </a>
           </div>
           <!-- menu amburguesa -->
@@ -44,11 +45,71 @@
             <ul
               class="lg:text-white text-[#202023] font-medium flex justify-center gap-7 flex-col lg:flex-row"
             >
-              <li><a href="#">Inicio</a></li>
-              <li><a href="#">Experiencia</a></li>
-              <li><a href="#">Sobre mi</a></li>
-              <li><a href="#">Proyectos</a></li>
-              <li><a href="#">Contacto</a></li>
+              <li
+                class="relative group lg:hover:bg-transparent hover:bg-[#FF6F61] lg:p-0 p-2 rounded transition-colors"
+              >
+                <a
+                  href="./index.html"
+                  class="md:hover:text-[#FF6F61] hover:text-white transition-colors inline-block w-full"
+                >
+                  Inicio
+                  <span
+                    class="absolute left-0 bottom-0 w-0 h-0.5 bg-[#FF6F61] group-hover:w-full transition-all duration-300 hidden lg:block"
+                  ></span>
+                </a>
+              </li>
+              <li
+                class="relative group lg:hover:bg-transparent hover:bg-[#FF6F61] lg:p-0 p-2 rounded transition-colors"
+              >
+                <a
+                  href="#experiencia"
+                  class="md:hover:text-[#FF6F61] hover:text-white transition-colors inline-block w-full"
+                >
+                  Experiencia
+                  <span
+                    class="absolute left-0 bottom-0 w-0 h-0.5 bg-[#FF6F61] group-hover:w-full transition-all duration-300 hidden lg:block"
+                  ></span>
+                </a>
+              </li>
+              <li
+                class="relative group lg:hover:bg-transparent hover:bg-[#FF6F61] lg:p-0 p-2 rounded transition-colors"
+              >
+                <a
+                  href="./sobreMi.html"
+                  class="md:hover:text-[#FF6F61] hover:text-white transition-colors inline-block w-full"
+                >
+                  Sobre mí
+                  <span
+                    class="absolute left-0 bottom-0 w-0 h-0.5 bg-[#FF6F61] group-hover:w-full transition-all duration-300 hidden lg:block"
+                  ></span>
+                </a>
+              </li>
+              <li
+                class="relative group lg:hover:bg-transparent hover:bg-[#FF6F61] lg:p-0 p-2 rounded transition-colors"
+              >
+                <a
+                  href="./proyecto1.html"
+                  class="md:hover:text-[#FF6F61] hover:text-white transition-colors inline-block w-full"
+                >
+                  Proyectos
+                  <span
+                    class="absolute left-0 bottom-0 w-0 h-0.5 bg-[#FF6F61] group-hover:w-full transition-all duration-300 hidden lg:block"
+                  ></span>
+                </a>
+              </li>
+              <li
+                class="relative group lg:hover:bg-transparent hover:bg-[#FF6F61] lg:p-0 p-2 rounded transition-colors"
+              >
+                <a
+                  href="./contacto.html"
+                  class="md:hover:text-[#FF6F61] hover:text-white transition-colors inline-block w-full"
+                >
+                  Contacto
+                  <span
+                    class="absolute left-0 bottom-0 w-0 h-0.5 bg-[#FF6F61] group-hover:w-full transition-all duration-300 hidden lg:block"
+                  ></span>
+                </a>
+              </li>
             </ul>
             <div class="pt-5 lg:pt-0">
               <a href="#">
@@ -67,7 +128,11 @@
         <div
           class="absolute left-14 md:left-1/4 top-1 md:top-4 lg:top-10 -z-10 md:z-0"
         >
-          <img src="./img/luna.svg" alt="Luna" class="w-28 md:w-48 lg:w-64" />
+          <img
+            src="./img/luna.svg"
+            alt="Luna"
+            class="w-28 md:w-48 lg:w-64 animate-pulse"
+          />
         </div>
         <div
           class="absolute left-32 lg:left-40 top-24 lg:top-28 -z-10 md:z-0 md:block hidden"
@@ -140,9 +205,9 @@
           </p>
           <div>
             <button
-              class="font-[DM Sans] py-2 px-5 bg-[#FFEA00] text-[#202023] font-semibold rounded-lg shadow-md hover:bg-[#ffea00d9] transition-colors"
+              class="font-[DM Sans] py-2 px-5 bg-[#FFEA00] hover:bg-[#FFEE39] text-[#202023] font-semibold rounded-lg hover:-translate-y-2 hover:shadow-lg will-change-transform transition-transform duration-300 ease-in-out"
             >
-              <a href="#">Currículum</a>
+              <a href="#" class="inline-block">Currículum</a>
             </button>
           </div>
         </div>
@@ -156,6 +221,8 @@
         </div>
       </section>
     </header>
+
+    <!-- main -->
     <main>
       <!-- carrusel - Herramientas-->
       <section class="max-w-[1300px] m-auto py-14 md:py-20">
@@ -208,7 +275,7 @@
       </section>
 
       <!-- tarjetas juntos - Experiencia -->
-      <section class="max-w-[1300px] m-auto py-14 md:py-20">
+      <section id="experiencia" class="max-w-[1300px] m-auto py-14 md:py-20">
         <h2
           class="font-[Montserrat] text-white text-3xl md:text-4xl font-semibold text-center"
         >
@@ -227,11 +294,17 @@
               Diseño Centrado en el Usuario
             </h3>
             <div class="font-[DM Sans] text-[#FF6F61] font-medium">
-              <a href="#" class="hover:text-[#ff6e61e5]">Música</a>
+              <a href="#" class="hover:text-[#ce4c40] transition-colors"
+                >Música</a
+              >
               -
-              <a href="#" class="hover:text-[#ff6e61e5]">Libros</a>
+              <a href="#" class="hover:text-[#ce4c40] transition-colors"
+                >Libros</a
+              >
               -
-              <a href="#" class="hover:text-[#ff6e61e5]">Petmatch</a>
+              <a href="#" class="hover:text-[#ce4c40] transition-colors"
+                >Petmatch</a
+              >
             </div>
             <p class="font-[DM Sans] text-white font-normal md:text-lg">
               Use metodologias de brief, benchmark, mapa de contenidos y otros
@@ -254,11 +327,17 @@
               Desarrollo Front-End
             </h3>
             <div class="font-[DM Sans] text-[#FF6F61] font-medium">
-              <a href="#" class="hover:text-[#ff6e61e5]">Restaurante</a>
+              <a href="#" class="hover:text-[#ce4c40] transition-colors"
+                >Restaurante</a
+              >
               -
-              <a href="#" class="hover:text-[#ff6e61e5]">Viajes</a>
+              <a href="#" class="hover:text-[#ce4c40] transition-colors"
+                >Viajes</a
+              >
               -
-              <a href="#" class="hover:text-[#ff6e61e5]">Petmatch</a>
+              <a href="#" class="hover:text-[#ce4c40] transition-colors"
+                >Petmatch</a
+              >
             </div>
             <p class="font-[DM Sans] text-white font-normal md:text-lg">
               Desarrollo de codigo HTML y CSS para diferentes sitios webs asi
@@ -281,11 +360,17 @@
               Implementación de Frameworks
             </h3>
             <div class="font-[DM Sans] text-[#FF6F61] font-medium">
-              <a href="#" class="hover:text-[#ff6e61e5]">Portafolio</a>
+              <a href="#" class="hover:text-[#ce4c40] transition-colors"
+                >Portafolio</a
+              >
               -
-              <a href="#" class="hover:text-[#ff6e61e5]">Spotify</a>
+              <a href="#" class="hover:text-[#ce4c40] transition-colors"
+                >Spotify</a
+              >
               -
-              <a href="#" class="hover:text-[#ff6e61e5]">Supermercado</a>
+              <a href="#" class="hover:text-[#ce4c40] transition-colors"
+                >Supermercado</a
+              >
             </div>
             <p class="font-[DM Sans] text-white font-normal md:text-lg">
               Proyectos programados con js, php, mysql y el cms de wordpress.
@@ -319,9 +404,9 @@
             emergentes.
           </p>
           <button
-            class="font-[DM Sans] py-2 px-5 bg-[#FFEA00] text-[#202023] font-semibold rounded-lg shadow-md hover:bg-[#ffea00d9] transition-colors"
+            class="font-[DM Sans] py-2 px-5 bg-[#FFEA00] hover:bg-[#FFEE39] text-[#202023] font-semibold rounded-lg hover:-translate-y-2 hover:shadow-lg will-change-transform transition-transform duration-300 ease-in-out"
           >
-            <a href="#">Ver más</a>
+            <a href="#" class="inline-block">Ver más</a>
           </button>
         </div>
       </section>
@@ -343,7 +428,7 @@
             <img src="" alt="proyecto-1" class="w-full" />
             <a
               href="#"
-              class="hover:text-[#ff6e61e5] font-[DM Sans] text-[#FF6F61] font-medium"
+              class="hover:text-[#ce4c40] font-[DM Sans] text-[#FF6F61] font-medium transition-colors"
               >Diseño Centrado en el Usuario</a
             >
             <p class="font-[DM Sans] text-white font-normal md:text-lg">
@@ -362,7 +447,7 @@
             <img src="" alt="proyecto-2" class="w-full" />
             <a
               href="#"
-              class="hover:text-[#ff6e61e5] font-[DM Sans] text-[#FF6F61] font-medium"
+              class="hover:text-[#ce4c40] font-[DM Sans] text-[#FF6F61] font-medium transition-colors"
               >Desarrollo Front-End</a
             >
             <p class="font-[DM Sans] text-white font-normal md:text-lg">
@@ -387,7 +472,7 @@
 
             <a
               href="#"
-              class="hover:text-[#ff6e61e5] font-[DM Sans] text-[#FF6F61] font-medium"
+              class="hover:text-[#ce4c40] font-[DM Sans] text-[#FF6F61] font-medium transition-colors"
               >Implementación de Frameworks</a
             >
 
@@ -412,13 +497,88 @@
         </div>
         <div class="p-5 flex justify-center lg:justify-end">
           <button
-            class="font-[DM Sans] py-2 px-5 bg-[#FFEA00] text-[#202023] font-semibold rounded-lg shadow-md hover:bg-[#ffea00d9] transition-colors mt-5"
+            class="font-[DM Sans] py-2 px-5 bg-[#FFEA00] hover:bg-[#FFEE39] text-[#202023] font-semibold rounded-lg hover:-translate-y-2 hover:shadow-lg will-change-transform transition-transform duration-300 ease-in-out mt-5"
           >
-            <a href="#">Ver más</a>
+            <a href="#" class="inline-block">Ver más</a>
           </button>
         </div>
       </section>
     </main>
+
+    <!-- footer -->
+    <footer class="bg-white">
+      <section class="max-w-[1300px] m-auto md:px-5 pb-14 md:pb-10 pt-16">
+        <div
+          class="flex flex-col justify-center items-center md:items-stretch md:flex-row md:justify-between gap-6 md:gap-0"
+        >
+          <!-- texto-contacto -->
+          <div>
+            <a href="#">
+              <img
+                src="./img/logo-footer.svg"
+                alt="logo"
+                class="w-24 md:w-32 m-auto md:m-0"
+              />
+            </a>
+            <p
+              class="font-[DM Sans] font-medium md:text-lg lg:text-xl w-40 md:w-52 text-center md:text-start"
+            >
+              ¡Creemos Juntos Tu Presencia Digital!
+            </p>
+            <div class="text-center md:text-start">
+              <button
+                class="font-[DM Sans] py-2 px-5 bg-[#FF6F61] hover:bg-[#ff776a] text-[#202023] font-semibold rounded-lg hover:-translate-y-2 hover:shadow-lg will-change-transform transition-transform duration-300 ease-in-out mt-4"
+              >
+                <a href="#" class="inline-block">Correo</a>
+              </button>
+            </div>
+          </div>
+          <!-- contacto -->
+          <div class="flex md:flex-row gap-20">
+            <div>
+              <h3
+                class="font-[Montserrat] text-[#202023] text-xl md:text-2xl font-semibold text-center md:text-start"
+              >
+                Redes
+              </h3>
+              <div class="flex text-[#202023] gap-2">
+                <a href="#" class="hover:text-[#FF6F61] transition-colors"
+                  ><i class="fa-brands fa-square-instagram text-3xl"></i
+                ></a>
+                <a href="#" class="hover:text-[#FF6F61] transition-colors"
+                  ><i class="fa-brands fa-linkedin text-3xl"></i
+                ></a>
+                <a href="#" class="hover:text-[#FF6F61] transition-colors"
+                  ><i class="fa-brands fa-github text-3xl"></i
+                ></a>
+                <a href="#" class="hover:text-[#FF6F61] transition-colors"
+                  ><i class="fa-brands fa-square-whatsapp text-3xl"></i
+                ></a>
+              </div>
+            </div>
+            <div class="flex flex-col md:block">
+              <h3
+                class="font-[Montserrat] text-[#202023] text-xl md:text-2xl font-semibold text-center md:text-start"
+              >
+                Contacto
+              </h3>
+              <a
+                href="#"
+                class="text-center md:text-start hover:text-[#ff6e61e5] font-[DM Sans] transition-colors"
+                >mensaje</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- copyright -->
+        <span
+          class="flex items-center gap-2 justify-center text-[#202023] pt-6 font-medium"
+          ><i class="fa-regular fa-copyright"></i> Copyright 2025
+          <i class="fa-solid fa-circle text-[#FF6F61] text-[6px]"></i> Daniel
+          Rosales</span
+        >
+      </section>
+    </footer>
 
     <!-- Font Awesome -->
     <link
