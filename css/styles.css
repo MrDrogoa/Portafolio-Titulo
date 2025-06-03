@@ -554,6 +554,10 @@ video {
   display: none;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -898,14 +902,14 @@ video {
   border-color: rgb(255 111 97 / var(--tw-border-opacity, 1));
 }
 
-.border-white {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
-}
-
 .border-\[\#FFEA00\] {
   --tw-border-opacity: 1;
   border-color: rgb(255 234 0 / var(--tw-border-opacity, 1));
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
 }
 
 .bg-\[\#202023\] {
@@ -1034,6 +1038,10 @@ video {
 
 .pt-11 {
   padding-top: 2.75rem;
+}
+
+.pt-14 {
+  padding-top: 3.5rem;
 }
 
 .pt-16 {
@@ -1176,6 +1184,10 @@ video {
   transition-duration: 150ms;
 }
 
+.duration-100 {
+  transition-duration: 100ms;
+}
+
 .duration-300 {
   transition-duration: 300ms;
 }
@@ -1187,6 +1199,46 @@ video {
 .will-change-transform {
   will-change: transform;
 }
+
+.floating {
+  animation: floating 3s infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(1px);
+  }
+
+  50% {
+    transform: translateY(7px);
+  }
+
+  100% {
+    transform: translateY(1px);
+  }
+}
+
+.floating-slow {
+  animation: floating 3.8s infinite;
+}
+
+.floating-fast {
+  animation: floating 4s infinite;
+}
+
+.floating-slower {
+  animation: floating 3s infinite;
+}
+
+.floating-fasting {
+  animation: floating 3.8s infinite;
+}
+
+.floating-low {
+  animation: floating 4s infinite;
+}
+
+/* Añade esto a tu archivo input.css */
 
 .hover\:-translate-y-2:hover {
   --tw-translate-y: -0.5rem;
@@ -1390,6 +1442,10 @@ video {
 
   .md\:pt-14 {
     padding-top: 3.5rem;
+  }
+
+  .md\:pt-16 {
+    padding-top: 4rem;
   }
 
   .md\:pt-20 {
