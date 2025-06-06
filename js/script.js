@@ -1,18 +1,8 @@
 // menu amburguesa
 function openMenu() {
-  let navContent = document.getElementById("menu-content");
-  let navIcons = document.getElementById("menu-icons");
-
-  if (
-    navContent.classList.contains("hidden") ||
-    navIcons.classList.contains("hidden")
-  ) {
-    navContent.classList.remove("hidden");
-    navIcons.classList.remove("hidden");
-  } else {
-    navContent.classList.add("hidden");
-    navIcons.classList.add("block");
-  }
+  const menuContent = document.getElementById("menu-content");
+  menuContent.classList.toggle("hidden");
+  menuContent.classList.toggle("flex");
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -38,4 +28,36 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     }).mount();
   }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Para pantallas móviles, permite hacer clic en elementos con submenús
+  const menuItemsWithChildren = document.querySelectorAll(
+    ".menu-item-has-children > a"
+  );
+
+  menuItemsWithChildren.forEach((item) => {
+    item.addEventListener("click", function (e) {
+      // Solo en móviles (pantallas pequeñas)
+      if (window.innerWidth < 1024) {
+        e.preventDefault();
+        const submenu = this.nextElementSibling;
+
+        // Alternar visibilidad del submenú
+        if (submenu && submenu.classList.contains("hidden")) {
+          // Primero oculta todos los submenús abiertos
+          document
+            .querySelectorAll(".menu-item-has-children > ul:not(.hidden)")
+            .forEach((menu) => {
+              menu.classList.add("hidden");
+            });
+
+          // Luego muestra el submenú actual
+          submenu.classList.remove("hidden");
+        } else if (submenu) {
+          submenu.classList.add("hidden");
+        }
+      }
+    });
+  });
 });

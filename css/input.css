@@ -40,3 +40,8 @@
     animation: floating 4s infinite;
   }
 }
+/* style-carrusel */
+.splide__arrow {
+  opacity: 1 !important;
+  background: transparent !important;
+}
