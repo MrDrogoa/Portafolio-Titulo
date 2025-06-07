@@ -2,7 +2,7 @@
 function openMenu() {
   const menuContent = document.getElementById("menu-content");
   menuContent.classList.toggle("hidden");
-  menuContent.classList.toggle("flex");
+  menuContent.classList.toggle("block");
 }
 
 document.addEventListener("DOMContentLoaded", function () {

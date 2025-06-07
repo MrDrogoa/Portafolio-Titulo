@@ -1,18 +1,18 @@
-<?php get_header(); ?>
+<?php get_header() ?>
+
 <!-- banner - proyecto -->
 <section class="max-w-[1300px] m-auto py-8 md:py-12 lg:py-14">
     <div class="px-5">
         <h2
             class="font-[Montserrat] text-white text-4xl md:text-5xl lg:text-6xl font-extrabold">
-            Proyectos<span class="text-[#FF6F61]">.</span>
+            Proyectos - Front End</span>
         </h2>
     </div>
 </section>
 </header>
 
-<!-- main - proyectos -->
 <main>
-    <!-- Proyectos -->
+    <!-- Proyectos frameworks -->
     <section class="max-w-[1300px] m-auto pb-14">
         <div
             class="flex flex-col md:flex-row flex-wrap justify-center px-5 pt-11 w-full gap-5">
@@ -21,9 +21,8 @@
                 class="flex flex-col border-2 border-white rounded-md overflow-hidden max-w-sm m-auto md:m-0">
                 <img src="<?php echo get_theme_file_uri('./img/diseñouxui.jpg') ?>" alt="diseñouxui" class="w-full h-1/3 md:h-3/4 object-cover" />
                 <div class="px-6 pb-6 pt-5">
-                    <!-- revisar para entrar a las categorias desde las tarjetas -->
                     <a
-                        href="<?= site_url() . '/diseno-ux-ui'; ?>"
+                        href="#"
                         class="hover:text-[#ce4c40] font-[Montserrat] text-[#FF6F61] font-semibold  md:text-lg  transition-colors">Diseño Centrado en el Usuario</a>
                     <p class="font-[DM Sans] font-normal text-white pb-2">
                         metodología que prioriza las necesidades y expectativas del
@@ -83,60 +82,55 @@
         </div>
     </section>
 
-    <!-- info - ideas -->
-    <section class="max-w-[1300px] m-auto py-8 md:py-12 lg:py-14 px-5">
-        <h2
-            class="font-[Montserrat] text-white text-3xl md:text-4xl font-semibold text-center">
-            Desarrollemos Ideas
-        </h2>
-        <div
-            class="flex flex-wrap lg:flex-nowrap md:flex-row justify-center pt-11 pb-5">
-            <div
-                class="flex flex-col text-white border-2 px-6 py-14 md:px-4 md:py-10 max-w-sm w-full">
-                <h3 class="font-[Montserrat] text-xl md:text-2xl font-semibold">
-                    01
-                </h3>
-                <p class="font-[DM Sans] font-normal md:text-lg pb-2">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-                    corrupti laudantium nam cumque amet totam quasi temporibus minima
-                    alias optio. sladfsakld sadfsd sdfsdfsd
-                </p>
-            </div>
-            <div
-                class="flex flex-col text-white border-2 px-6 py-14 md:px-4 md:py-10 max-w-sm w-full">
-                <h3 class="font-[Montserrat] text-xl md:text-2xl font-semibold">
-                    02
-                </h3>
-                <p class="font-[DM Sans] font-normal md:text-lg pb-2">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-                    corrupti laudantium nam cumque amet totam quasi temporibus minima
-                    alias optio.
-                </p>
-            </div>
-            <div
-                class="flex flex-col text-white border-2 px-6 py-14 md:px-4 md:py-10 max-w-sm w-full">
-                <h3 class="font-[Montserrat] text-xl md:text-2xl font-semibold">
-                    03
-                </h3>
-                <p class="font-[DM Sans] font-normal md:text-lg pb-2">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-                    corrupti laudantium nam cumque amet totam quasi temporibus minima
-                    alias optio.
-                </p>
-            </div>
-            <div
-                class="flex flex-col text-white border-2 px-6 py-14 md:px-4 md:py-10 max-w-sm w-full">
-                <h3 class="font-[Montserrat] text-xl md:text-2xl font-semibold">
-                    04
-                </h3>
-                <p class="font-[DM Sans] font-normal md:text-lg pb-2">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-                    corrupti laudantium nam cumque amet totam quasi temporibus minima
-                    alias optio.
-                </p>
-            </div>
+    <!-- formulario -->
+    <section class="max-w-[1300px] m-auto py-8 md:py-12 lg:py-14">
+        <div class="px-5">
+            <h2
+                class="font-[Montserrat] text-white text-4xl md:text-5xl lg:text-6xl font-extrabold text-center">
+                Contacto
+            </h2>
+            <p
+                class="font-[DM Sans] text-[#FF6F61] font-normal md:text-lg text-center m-auto w-1/2 md:w-1/3 lg:w-1/4 py-2 md:py-4">
+                Contactame para marcar la diferencia. ¿Listo para crear impacto?
+            </p>
+        </div>
+        <div class="flex flex-col px-5 mt-6">
+            <form action="#" method="POST" class="space-y-6">
+                <div>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Nombre"
+                        class="mt-1 block w-full sm:w-3/4 md:w-1/2 m-auto px-3 py-2 focus:outline-none bg-transparent border-2 text-white"
+                        required />
+                </div>
+                <div>
+                    <input
+                        type="text"
+                        id="email"
+                        name="email"
+                        placeholder="Email"
+                        class="mt-1 block w-full sm:w-3/4 md:w-1/2 m-auto px-3 py-2 focus:outline-none bg-transparent border-2 text-white"
+                        required />
+                </div>
+                <div>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="7"
+                        placeholder="Mensaje"
+                        class="mt-1 block w-full sm:w-3/4 md:w-1/2 m-auto px-3 py-2 focus:outline-none bg-transparent border-2 text-white resize-none"
+                        required></textarea>
+                </div>
+                <div class="flex items-center justify-center">
+                    <button
+                        class="font-[DM Sans] py-2 px-5 bg-[#FFEA00] hover:bg-[#FFEE39] text-[#202023] font-semibold rounded-lg hover:-translate-y-2 hover:shadow-lg will-change-transform transition-transform duration-300 ease-in-out">
+                        <a href="#" class="inline-block">Enviar</a>
+                    </button>
+                </div>
+            </form>
         </div>
     </section>
 </main>
-
-<?php get_footer(); ?>
+<?php get_footer() ?>

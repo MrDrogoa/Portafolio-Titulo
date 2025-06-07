@@ -249,7 +249,7 @@
             </p>
             <button
                 class="font-[DM Sans] py-2 px-5 bg-[#FFEA00] hover:bg-[#FFEE39] text-[#202023] font-semibold rounded-lg hover:-translate-y-2 hover:shadow-lg will-change-transform transition-transform duration-300 ease-in-out">
-                <a href="#" class="inline-block">Ver más</a>
+                <a href="<?= site_url() . '/sobre-mi'; ?>" class="inline-block">Ver más</a>
             </button>
         </div>
     </section>
@@ -269,7 +269,7 @@
                 <div class="px-6 pb-6 pt-5">
                     <a
                         href="#"
-                        class="hover:text-[#ce4c40] font-[DM Sans] text-[#FF6F61] font-medium  md:text-lg  transition-colors">Diseño Centrado en el Usuario</a>
+                        class="hover:text-[#ce4c40] font-[Montserrat] text-[#FF6F61] font-semibold  md:text-lg  transition-colors">Diseño Centrado en el Usuario</a>
                     <p class="font-[DM Sans] font-normal text-white pb-2">
                         metodología que prioriza las necesidades y expectativas del
                         usuario...
@@ -287,7 +287,7 @@
                 <div class="px-6 pb-6 pt-5">
                     <a
                         href="#"
-                        class="hover:text-[#ce4c40] font-[DM Sans] text-[#FF6F61] font-medium md:text-lg transition-colors">Desarrollo Front-End</a>
+                        class="hover:text-[#ce4c40] font-[Montserrat] text-[#FF6F61] font-semibold md:text-lg transition-colors">Desarrollo Front-End</a>
                     <p class="font-[DM Sans] text-white font-normal pb-2">
                         Se enfoca en la creación y diseño de la interfaz visual de un
                         sitio o aplicación...
@@ -308,7 +308,7 @@
                 <div class="px-6 pb-6 pt-5">
                     <a
                         href="#"
-                        class="hover:text-[#ce4c40] font-[DM Sans] text-[#FF6F61] font-medium md:text-lg transition-colors">Implementación de Frameworks</a>
+                        class="hover:text-[#ce4c40] font-[Montserrat] text-[#FF6F61] font-semibold md:text-lg transition-colors">Implementación de Frameworks</a>
 
                     <p class="font-[DM Sans] text-white font-normal pb-2">
                         Consiste en integrar estructuras predefinidas de desarrollo...
@@ -329,7 +329,7 @@
         <div class="p-5 flex justify-center lg:justify-end">
             <button
                 class="font-[DM Sans] py-2 px-5 bg-[#FFEA00] hover:bg-[#FFEE39] text-[#202023] font-semibold rounded-lg hover:-translate-y-2 hover:shadow-lg will-change-transform transition-transform duration-300 ease-in-out mt-5">
-                <a href="#" class="inline-block">Ver más</a>
+                <a href="<?= site_url() . '/proyectos'; ?>" class="inline-block">Ver más</a>
             </button>
         </div>
     </section>

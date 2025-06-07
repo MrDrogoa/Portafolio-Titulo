@@ -73,7 +73,7 @@ class Tailwind_Nav_Walker extends Walker_Nav_Menu
         $atts['class'] = '';
 
         if ($depth === 0) {
-            $atts['class'] = 'md:hover:text-[#FF6F61] hover:text-white transition-colors inline-block w-full';
+            $atts['class'] = 'lg:hover:text-[#FF6F61] hover:text-white transition-colors inline-block w-full';
 
             // Si tiene hijos, añade icono desplegable
             if (in_array('menu-item-has-children', $classes)) {
