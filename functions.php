@@ -17,18 +17,20 @@ function theme_enqueue_scripts()
     // styles css tailwind - solo el compilado, no el input
     wp_enqueue_style('tailwind',  get_template_directory_uri() . '/css/styles.css', array(), $version, 'all');
     // libreria de iconos
-    wp_enqueue_style('icons',  get_template_directory_uri() . '/node_modules/@fortawesome/fontawesome-free/css/all.min.css', array(), $version, 'all');
-    // styles de carrusel
+    wp_enqueue_style('icons',  get_template_directory_uri() . '/node_modules/@fortawesome/fontawesome-free/css/all.min.css', array(), $version, 'all');    // styles de carrusel
     wp_enqueue_style('carrusel-icons',  get_template_directory_uri() . '/assets/css/splide.min.css', array(), $version, 'all');
     // libreria de animaciones
     wp_enqueue_style('animate',  get_template_directory_uri() . '/assets/css/animate.min.css', array(), $version, 'all');
     // fuentes google
-    wp_enqueue_style('bootstrap', 'https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap', array(), $version, 'all');
+    wp_enqueue_style('fuente', 'https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap', array(), $version, 'all');
 
-    // scripts
-    wp_enqueue_script('scripts', get_template_directory_uri() . '/js/script.js', array(), $version, true);
-    // scripts de carrusel
+
+    // scripts de carrusel - cargamos primero las dependencias
     wp_enqueue_script('scripts-carrusel', get_template_directory_uri() . '/assets/js/splide.min.js', array(), $version, true);
+    // script de scroll - debe cargarse antes que script.js
+    wp_enqueue_script('scripts-scroll', get_template_directory_uri() . '/assets/js/scrollreveal.min.js', array(), $version, true);
+    // script principal - debe cargarse después de todas las dependencias
+    wp_enqueue_script('scripts', get_template_directory_uri() . '/js/script.js', array('jquery', 'scripts-carrusel', 'scripts-scroll'), $version, true);
 }
 add_action('wp_enqueue_scripts', 'theme_enqueue_scripts');
 

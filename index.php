@@ -56,16 +56,16 @@
     <div
         class="text-white lg:flex hidden flex-col gap-2 items-center border-white border-2 py-6 px-2 rounded-md absolute left-5 top-1/2 -translate-y-1/2 z-20">
         <div>
-            <a href="#" class="hover:text-[#FF6F61] transition-colors"><i class="fa-brands fa-square-instagram text-3xl"></i></a>
+            <a href="https://www.instagram.com/j.daniel.01/?next=%2F" target="_blank" class="hover:text-[#FF6F61] transition-colors"><i class="fa-brands fa-square-instagram text-3xl"></i></a>
         </div>
         <div>
-            <a href="#" class="hover:text-[#FF6F61] transition-colors"><i class="fa-brands fa-linkedin text-3xl"></i></a>
+            <a href="https://www.linkedin.com/in/daniel-rosales-1b737a1a9/" target="_blank" class="hover:text-[#FF6F61] transition-colors"><i class="fa-brands fa-linkedin text-3xl"></i></a>
         </div>
         <div>
-            <a href="#" class="hover:text-[#FF6F61] transition-colors"><i class="fa-brands fa-github text-3xl"></i></a>
+            <a href="https://github.com/MrDrogoa" target="_blank" class="hover:text-[#FF6F61] transition-colors"><i class="fa-brands fa-github text-3xl"></i></a>
         </div>
         <div>
-            <a href="#" class="hover:text-[#FF6F61] transition-colors"><i class="fa-brands fa-square-whatsapp text-3xl"></i></a>
+            <a href="https://wa.me/+56962857073" target="_blank" class="hover:text-[#FF6F61] transition-colors"><i class="fa-brands fa-square-whatsapp text-3xl"></i></a>
         </div>
     </div>
 
@@ -73,7 +73,7 @@
     <div
         class="flex flex-col items-center justify-center relative z-10 w-3/5 m-auto md:w-auto">
         <h1
-            class="font-[Montserrat] text-white text-5xl md:text-6xl lg:text-8xl font-extrabold text-center">
+            class="font-[Montserrat] text-white text-5xl md:text-6xl lg:text-8xl font-extrabold text-center animate__animated animate__headShake">
             DANIEL <span class="text-[#FF6F61]">R</span>OSALES
         </h1>
         <p
@@ -83,7 +83,7 @@
         <div>
             <button
                 class="font-[DM Sans] py-2 px-5 bg-[#FFEA00] hover:bg-[#FFEE39] text-[#202023] font-semibold rounded-lg hover:-translate-y-2 hover:shadow-lg will-change-transform transition-transform duration-300 ease-in-out">
-                <a href="#" class="inline-block">Currículum</a>
+                <a href="./img/Daniel rosales - Profesional.pdf" target="_blank" class="inline-block">Currículum</a>
             </button>
         </div>
     </div>
@@ -152,7 +152,7 @@
     <!-- tarjetas juntos - Experiencia -->
     <section id="experiencia" class="max-w-[1300px] m-auto py-14 md:py-20">
         <h2
-            class="font-[Montserrat] text-white text-3xl md:text-4xl font-semibold text-center">
+            class="font-[Montserrat] text-white text-3xl md:text-4xl font-semibold text-center title-experiencia">
             Experiencia
         </h2>
         <div
@@ -183,7 +183,7 @@
 
             <!--card-2  -->
             <div
-                class="card flex flex-col border-2 border-white p-10 gap-3 max-w-sm m-auto md:m-0">
+                class="flex flex-col border-2 border-white p-10 gap-3 max-w-sm m-auto md:m-0">
                 <h3
                     class="font-[Montserrat] text-white text-xl md:text-2xl font-semibold">
                     Desarrollo Front-End
@@ -207,7 +207,7 @@
 
             <!-- card-3 -->
             <div
-                class="card flex flex-col border-2 border-white p-10 gap-3 max-w-sm m-auto md:m-0">
+                class="flex flex-col border-2 border-white p-10 gap-3 max-w-sm m-auto md:m-0">
                 <h3
                     class="font-[Montserrat] text-white text-xl md:text-2xl font-semibold">
                     Implementación de Frameworks
@@ -236,7 +236,7 @@
         <div
             class="flex justify-center items-center flex-col w-72 md:w-96 text-white m-auto text-center gap-3">
             <h2
-                class="font-[Montserrat] text-white text-3xl md:text-4xl font-semibold">
+                class="font-[Montserrat] text-white text-3xl md:text-4xl font-semibold title-sobre-mi">
                 Sobre mí
             </h2>
             <p class="font-[DM Sans] font-normal md:text-lg pb-2">
@@ -264,7 +264,7 @@
             class="flex flex-col md:flex-row flex-wrap justify-center px-5 pt-11 w-full gap-5">
             <!-- card-1 -->
             <div
-                class="flex flex-col border-2 border-white rounded-md overflow-hidden max-w-sm m-auto md:m-0">
+                class="card-1 flex flex-col border-2 border-white rounded-md overflow-hidden max-w-sm m-auto md:m-0">
                 <img src="<?php echo get_theme_file_uri('./img/diseñouxui.jpg') ?>" alt="diseñouxui" class="w-full h-1/3 md:h-3/4 object-cover" />
                 <div class="px-6 pb-6 pt-5">
                     <a
@@ -282,7 +282,7 @@
 
             <!--card-2  -->
             <div
-                class="card flex flex-col border-2 border-white rounded-md overflow-hidden max-w-sm m-auto md:m-0">
+                class="card-2 flex flex-col border-2 border-white rounded-md overflow-hidden max-w-sm m-auto md:m-0">
                 <img src="<?php echo get_theme_file_uri('./img/frontend.jpg') ?>" alt="frontend" class="w-full h-3/5 md:h-3/4 object-cover" />
                 <div class="px-6 pb-6 pt-5">
                     <a
@@ -303,7 +303,7 @@
 
             <!-- card-3 -->
             <div
-                class="card flex flex-col border-2 border-white rounded-md overflow-hidden max-w-sm m-auto md:m-0">
+                class="card-3 flex flex-col border-2 border-white rounded-md overflow-hidden max-w-sm m-auto md:m-0">
                 <img src="<?php echo get_theme_file_uri('./img/frameworks.jpg') ?>" alt="frameworks" class="w-full h-1/3 md:h-3/4 object-cover" />
                 <div class="px-6 pb-6 pt-5">
                     <a

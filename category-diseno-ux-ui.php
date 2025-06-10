@@ -19,14 +19,13 @@
             <!-- card-1 -->
             <div
                 class="flex flex-col border-2 border-white rounded-md overflow-hidden max-w-sm m-auto md:m-0">
-                <img src="<?php echo get_theme_file_uri('./img/diseñouxui.jpg') ?>" alt="diseñouxui" class="w-full h-1/3 md:h-3/4 object-cover" />
+                <img src="<?php echo get_theme_file_uri('./img/Logo_Womad_2024.webp') ?>" alt="diseñouxui" class="w-full h-1/3 md:h-3/4 object-cover" />
                 <div class="px-6 pb-6 pt-5">
                     <a
                         href="#"
-                        class="hover:text-[#ce4c40] font-[Montserrat] text-[#FF6F61] font-semibold  md:text-lg  transition-colors">Diseño Centrado en el Usuario</a>
+                        class="hover:text-[#ce4c40] font-[Montserrat] text-[#FF6F61] font-semibold  md:text-lg  transition-colors">Proyecto Womad</a>
                     <p class="font-[DM Sans] font-normal text-white pb-2">
-                        metodología que prioriza las necesidades y expectativas del
-                        usuario...
+                        En este proyecto pude conocer mas a fondo las metodologias que se usan...
                     </p>
                     <a href="#" class="text-white flex justify-end mt-auto">
                         <i class="fa-brands fa-figma text-white text-2xl lg:text-3xl"></i>
