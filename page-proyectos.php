@@ -33,15 +33,13 @@
                         <i class="fa-brands fa-figma text-white text-2xl lg:text-3xl"></i>
                     </a>
                 </div>
-            </div>
-
-            <!--card-2  -->
+            </div> <!--card-2  -->
             <div
                 class="card flex flex-col border-2 border-white rounded-md overflow-hidden max-w-sm m-auto md:m-0">
                 <img src="<?php echo get_theme_file_uri('./img/frontend.jpg') ?>" alt="frontend" class="w-full h-3/5 md:h-3/4 object-cover" />
                 <div class="px-6 pb-6 pt-5">
                     <a
-                        href="#"
+                        href="<?= site_url() . '/category/front-end'; ?>"
                         class="hover:text-[#ce4c40] font-[Montserrat] text-[#FF6F61] font-semibold md:text-lg transition-colors">Desarrollo Front-End</a>
                     <p class="font-[DM Sans] text-white font-normal pb-2">
                         Se enfoca en la creación y diseño de la interfaz visual de un
@@ -62,7 +60,7 @@
                 <img src="<?php echo get_theme_file_uri('./img/frameworks.jpg') ?>" alt="frameworks" class="w-full h-1/3 md:h-3/4 object-cover" />
                 <div class="px-6 pb-6 pt-5">
                     <a
-                        href="#"
+                        href="<?= site_url() . '/category/frameworks'; ?>"
                         class="hover:text-[#ce4c40] font-[Montserrat] text-[#FF6F61] font-semibold md:text-lg transition-colors">Implementación de Frameworks</a>
 
                     <p class="font-[DM Sans] text-white font-normal pb-2">

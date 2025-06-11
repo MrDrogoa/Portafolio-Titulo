@@ -55,34 +55,35 @@ class Tailwind_Nav_Walker extends Walker_Nav_Menu
 {
     function start_lvl(&$output, $depth = 0, $args = null)
     {
-        $output .= "<ul class='text-[#202023] md:static lg:absolute bg-white hidden group-hover:block lg:mt-2 lg:shadow-md lg:rounded-md lg:min-w-[150px] lg:py-2'>";
+        // Clases mejoradas para el submenú con efectos de transición y accesibilidad
+        $output .= "<ul class='hidden lg:group-hover:block lg:absolute lg:top-full lg:left-0 lg:mt-1 lg:bg-white lg:text-[#202023] lg:min-w-[200px] lg:shadow-md lg:rounded-md lg:p-2 mt-2 ml-4 space-y-2 lg:space-y-0 z-50 lg:origin-top lg:opacity-0 lg:group-hover:opacity-100 lg:translate-y-[-10px] lg:group-hover:translate-y-0 lg:transition-all lg:duration-300 lg:ease-in-out'>";
     }
 
     function start_el(&$output, $item, $depth = 0, $args = null, $id = 0)
     {
         $classes = empty($item->classes) ? array() : (array) $item->classes;
+        $has_children = in_array('menu-item-has-children', $classes);
 
         // Añade clases Tailwind basadas en la profundidad
         if ($depth === 0) {
             $item_output = "<li class='relative group lg:hover:bg-transparent hover:bg-[#FF6F61] lg:p-0 p-2 rounded transition-colors'>";
+
+            // Si tiene hijos, iniciar la estructura con div para alinear botón y enlace
+            if ($has_children) {
+                $item_output .= "<div class='flex items-center justify-between'>";
+            }
         } else {
-            $item_output = "<li class='hover:bg-gray-100'>";
+            $item_output = "<li class='lg:hover:bg-[#FF6F61] lg:p-2 p-1 rounded transition-colors'>";
         }
 
         // Añade atributos al enlace
         $atts = array();
         $atts['href'] = !empty($item->url) ? $item->url : '';
-        $atts['class'] = '';
 
         if ($depth === 0) {
-            $atts['class'] = 'lg:hover:text-[#FF6F61] hover:text-white transition-colors inline-block w-full';
-
-            // Si tiene hijos, añade icono desplegable
-            if (in_array('menu-item-has-children', $classes)) {
-                $atts['class'] .= ' flex items-center gap-2';
-            }
+            $atts['class'] = 'md:hover:text-[#FF6F61] hover:text-white transition-colors inline-block w-full lg:w-auto';
         } else {
-            $atts['class'] = 'block px-4 py-2';
+            $atts['class'] = 'hover:text-white transition-colors block w-full';
         }
 
         // Construye el enlace con atributos
@@ -97,17 +98,20 @@ class Tailwind_Nav_Walker extends Walker_Nav_Menu
         $item_output .= '<a' . $attributes . '>';
         $item_output .= $args->link_before . apply_filters('the_title', $item->title, $item->ID) . $args->link_after;
 
-        // Añade icono desplegable si tiene hijos
-        if ($depth === 0 && in_array('menu-item-has-children', $classes)) {
-            $item_output .= '<i class="fa-solid fa-caret-down"></i>';
-        }
-
         // Añade la línea de hover para elementos del primer nivel
         if ($depth === 0) {
             $item_output .= '<span class="absolute left-0 bottom-0 w-0 h-0.5 bg-[#FF6F61] group-hover:w-full transition-all duration-300 hidden lg:block"></span>';
         }
 
         $item_output .= '</a>';
+
+        // Si tiene hijos, añade el botón de despliegue para móviles
+        if ($depth === 0 && $has_children) {
+            $item_output .= '<button class="dropdown-toggle lg:hidden text-[#202023] hover:text-white transition-colors ml-2 p-2" aria-label="Toggle submenu">
+                <i class="fa-solid fa-caret-down text-large"></i>
+            </button>';
+            $item_output .= '</div>'; // Cierra el div flex
+        }
 
         $output .= apply_filters('walker_nav_menu_start_el', $item_output, $item, $depth, $args);
     }

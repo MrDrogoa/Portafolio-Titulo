@@ -60,6 +60,47 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+  // Manejo del submenu de proyectos con los botones dropdown-toggle
+  const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
+
+  dropdownToggles.forEach((toggle) => {
+    toggle.addEventListener("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+
+      // Obtener el submenu relacionado a este botón toggle
+      const submenu = this.closest("li").querySelector("ul");
+
+      if (!submenu) return; // Si no hay submenu, no hacer nada
+
+      // Alternar la visibilidad del submenu
+      if (submenu.classList.contains("hidden")) {
+        // Primero ocultar todos los submenús abiertos
+        document.querySelectorAll("li > ul:not(.hidden)").forEach((menu) => {
+          if (menu !== submenu) {
+            menu.classList.add("hidden");
+            const toggleBtn = menu
+              .closest("li")
+              .querySelector(".dropdown-toggle i");
+            if (toggleBtn) {
+              toggleBtn.classList.remove("fa-caret-up");
+              toggleBtn.classList.add("fa-caret-down");
+            }
+          }
+        });
+
+        // Mostrar el submenú actual
+        submenu.classList.remove("hidden");
+        this.querySelector("i").classList.remove("fa-caret-down");
+        this.querySelector("i").classList.add("fa-caret-up");
+      } else {
+        submenu.classList.add("hidden");
+        this.querySelector("i").classList.remove("fa-caret-up");
+        this.querySelector("i").classList.add("fa-caret-down");
+      }
+    });
+  });
 });
 
 // scroll libreria - Inicializar dentro del evento DOMContentLoaded
