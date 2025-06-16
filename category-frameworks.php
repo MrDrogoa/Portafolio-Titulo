@@ -91,7 +91,7 @@
             </h2>
             <p
                 class="font-[DM Sans] text-[#FF6F61] font-normal md:text-lg text-center m-auto w-1/2 md:w-1/3 lg:w-1/4 py-2 md:py-4">
-                Contactame para marcar la diferencia. ¿Listo para crear impacto?
+                Contactame para marcar la diferencia. ¿Listo para crear tu impacto?
             </p>
         </div>
         <div class="flex flex-col px-5 mt-6">

@@ -16,11 +16,11 @@
 <main>
     <!-- biografia -->
     <section class="max-w-[1300px] m-auto py-8 md:py-14">
-        <div class="flex flex-col lg:flex-row lg:justify-center gap-5 px-5">
-            <div class="border-2 border-white rounded-md">
-                <img src="" alt="biografia" />
+        <div class="flex flex-col lg:flex-row lg:justify-center gap-8 px-5">
+            <div>
+                <img src="<?php echo get_theme_file_uri('./img/sobreMi.jpg') ?>" alt="sobremi" class="m-auto w-3/4 md:w-full border-4 border-[#FF6F61] rounded-md" />
             </div>
-            <div class="text-white">
+            <div class="text-white w-full text-center md:text-start ">
                 <h3
                     class="font-[Montserrat] text-white text-xl md:text-2xl font-semibold">
                     Creatividad y accesibilidad desde Santiago, potenciando el mundo

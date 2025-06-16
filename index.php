@@ -83,7 +83,7 @@
         <div>
             <button
                 class="font-[DM Sans] py-2 px-5 bg-[#FFEA00] hover:bg-[#FFEE39] text-[#202023] font-semibold rounded-lg hover:-translate-y-2 hover:shadow-lg will-change-transform transition-transform duration-300 ease-in-out">
-                <a href="./img/Daniel rosales - Profesional.pdf" target="_blank" class="inline-block">Currículum</a>
+                <a href="<?php echo get_theme_file_uri('./img/Daniel rosales - Profesional.pdf') ?>" target="_blank" class="inline-block">Currículum</a>
             </button>
         </div>
     </div>
@@ -175,7 +175,7 @@
                     Use metodologias de brief, benchmark, mapa de contenidos y otros
                     para definir ideas sobre los requerimientos del usuario.
                 </p>
-                <a href="#" class="text-white flex justify-end mt-auto">
+                <a href="<?= site_url() . '/category/diseno-ux-ui'; ?>" class="text-white flex justify-end mt-auto">
                     <i
                         class="fa-solid fa-arrow-right text-2xl hover:text-[#FF6F61] transition-colors"></i>
                 </a>
@@ -199,7 +199,7 @@
                     Desarrollo de codigo HTML y CSS para diferentes sitios webs asi
                     como el manejo de librerias como Bootstrap.
                 </p>
-                <a href="#" class="text-white flex justify-end mt-auto">
+                <a href="<?= site_url() . '/category/front-end'; ?>" class="text-white flex justify-end mt-auto">
                     <i
                         class="fa-solid fa-arrow-right text-2xl hover:text-[#FF6F61] transition-colors"></i>
                 </a>
@@ -223,7 +223,7 @@
                     Proyectos programados con js, php, mysql y el cms de wordpress.
                     Iniciando asi con el manejo de Api y BD.
                 </p>
-                <a href="#" class="text-white flex justify-end mt-auto">
+                <a href="<?= site_url() . '/category/frameworks'; ?>" class="text-white flex justify-end mt-auto">
                     <i
                         class="fa-solid fa-arrow-right text-2xl hover:text-[#FF6F61] transition-colors"></i>
                 </a>

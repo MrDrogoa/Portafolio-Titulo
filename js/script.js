@@ -166,17 +166,17 @@ document.addEventListener("DOMContentLoaded", function () {
       small: {
         // Para pantallas pequeñas
         distance: "20px",
-        duration: 1300,
+        duration: 1000,
       },
       medium: {
         // Para pantallas medianas
         distance: "30px",
-        duration: 1300,
+        duration: 1000,
       },
       large: {
         // Para pantallas grandes
         distance: "50px",
-        duration: 1300,
+        duration: 1000,
       },
     };
 

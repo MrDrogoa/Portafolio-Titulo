@@ -81,9 +81,9 @@ class Tailwind_Nav_Walker extends Walker_Nav_Menu
         $atts['href'] = !empty($item->url) ? $item->url : '';
 
         if ($depth === 0) {
-            $atts['class'] = 'md:hover:text-[#FF6F61] hover:text-white transition-colors inline-block w-full lg:w-auto';
+            $atts['class'] = 'lg:hover:text-[#FF6F61] hover:text-white transition-colors inline-block w-full lg:w-auto';
         } else {
-            $atts['class'] = 'hover:text-white transition-colors block w-full';
+            $atts['class'] = 'lg:hover:text-white hover:text-[#202023] lg:hover:bg-transparent lg:rounded-none p-2 lg:p-0 rounded-md hover:bg-white transition-colors block w-full';
         }
 
         // Construye el enlace con atributos
