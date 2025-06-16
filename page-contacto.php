@@ -14,12 +14,13 @@
                 Contactame para marcar la diferencia. ¿Listo para crear tu impacto?
             </p>
         </div>
+
         <div class="flex flex-col px-5 mt-6">
-            <form action="" method="post" class="space-y-6">
+            <form action="<?php echo get_template_directory_uri(); ?>/database/bd.php" method="post" class="space-y-6">
                 <div>
                     <input
                         type="text"
-                        id="name"
+                        id="nombre"
                         name="nombre"
                         placeholder="Nombre"
                         class="mt-1 block w-full sm:w-3/4 md:w-1/2 m-auto px-3 py-2 focus:outline-none bg-transparent border-2 text-white"
@@ -27,8 +28,8 @@
                 </div>
                 <div>
                     <input
-                        type="text"
-                        id="email"
+                        type="email"
+                        id="correo"
                         name="correo"
                         placeholder="Email"
                         class="mt-1 block w-full sm:w-3/4 md:w-1/2 m-auto px-3 py-2 focus:outline-none bg-transparent border-2 text-white"
@@ -36,7 +37,7 @@
                 </div>
                 <div>
                     <textarea
-                        id="message"
+                        id="mensaje"
                         name="mensaje"
                         rows="7"
                         placeholder="Mensaje"

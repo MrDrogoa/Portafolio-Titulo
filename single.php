@@ -18,7 +18,7 @@
                 <div>
                     <button
                         class="font-[DM Sans] py-2 px-5 bg-[#FFEA00] hover:bg-[#FFEE39] text-[#202023] font-semibold rounded-lg hover:-translate-y-2 hover:shadow-lg will-change-transform transition-transform duration-300 ease-in-out">
-                        <a href="#" class="flex items-center gap-2">Behance <i class="fa-brands fa-square-behance text-3xl"></i></a>
+                        <a href="https://www.behance.net/danielrosales43" class="flex items-center gap-2">Behance <i class="fa-brands fa-square-behance text-3xl"></i></a>
                     </button>
                 </div>
             </div>
