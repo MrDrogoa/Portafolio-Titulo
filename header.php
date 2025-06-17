@@ -51,7 +51,7 @@
                     ); ?>
 
                     <div class="pt-5 lg:pt-0">
-                        <a href="#">
+                        <a href="mailto:picisdaniel2016@gmail.com">
                             <i
                                 class="fa-solid fa-square-envelope lg:text-white text-[#202023] text-3xl hover:text-[#FF6F61] transition-colors"></i>
                         </a>

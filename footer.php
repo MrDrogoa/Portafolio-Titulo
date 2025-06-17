@@ -17,7 +17,7 @@
                         ¡Creemos Juntos Tu Presencia Digital!
                     </p>
                     <div class="text-center md:text-start">
-                        <a href="mailto:picisdaniel2016@gmail.com" target="_blank" class="font-[DM Sans] py-2 px-5 bg-[#FF6F61] hover:bg-[#ff776a] text-[#202023] font-semibold rounded-lg hover:-translate-y-2 hover:shadow-lg will-change-transform transition-transform duration-300 ease-in-out mt-4 inline-block">
+                        <a href="mailto:picisdaniel2016@gmail.com" class="font-[DM Sans] py-2 px-5 bg-[#FF6F61] hover:bg-[#ff776a] text-[#202023] font-semibold rounded-lg hover:-translate-y-2 hover:shadow-lg will-change-transform transition-transform duration-300 ease-in-out mt-4 inline-block">
                             Correo
                         </a>
                     </div>
