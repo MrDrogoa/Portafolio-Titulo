@@ -19,7 +19,7 @@
             <!-- card-1 -->
             <div
                 class="flex flex-col border-2 border-white rounded-md overflow-hidden max-w-sm m-auto md:m-0">
-                <a href="<?= site_url() . '/category/diseno-ux-ui'; ?>" class="w-full h-1/3 md:h-3/4 ">
+                <a href="<?= site_url() . '/category/diseno-ux-ui'; ?>" class="w-full h-1/3 md:h-3/4">
                     <img src="<?php echo get_theme_file_uri('./img/diseñouxui.jpg') ?>" alt="diseñouxui" class="object-cover" />
                 </a>
                 <div class="px-6 pb-6 pt-5">

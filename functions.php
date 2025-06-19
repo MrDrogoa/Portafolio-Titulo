@@ -330,44 +330,6 @@ function mostrar_campos_proyecto($post)
         </div>
     </div>
 
-    <!-- Sección 5 (Opcional) -->
-    <div class="campos-proyecto">
-        <h3>Sección 5 (Opcional)</h3>
-        <div class="campo-grupo">
-            <label for="titulo_seccion_5">Título:</label>
-            <input type="text" id="titulo_seccion_5" name="titulo_seccion_5" value="<?php echo esc_attr($titulo_seccion_5); ?>" />
-        </div>
-        <div class="campo-grupo">
-            <label for="contenido_seccion_5">Contenido:</label>
-            <textarea id="contenido_seccion_5" name="contenido_seccion_5"><?php echo esc_textarea($contenido_seccion_5); ?></textarea>
-        </div>
-        <div class="campo-grupo">
-            <label for="imagen_seccion_5">URL de la imagen:</label>
-            <input type="text" id="imagen_seccion_5" name="imagen_seccion_5" value="<?php echo esc_attr($imagen_seccion_5); ?>" />
-            <p class="descripcion">URL completa de la imagen (dejar en blanco para omitir esta sección)</p>
-            <button type="button" class="button upload-image" data-target="imagen_seccion_5">Seleccionar imagen</button>
-        </div>
-    </div>
-
-    <!-- Sección 6 (Opcional) -->
-    <div class="campos-proyecto">
-        <h3>Sección 6 (Opcional)</h3>
-        <div class="campo-grupo">
-            <label for="titulo_seccion_6">Título:</label>
-            <input type="text" id="titulo_seccion_6" name="titulo_seccion_6" value="<?php echo esc_attr($titulo_seccion_6); ?>" />
-        </div>
-        <div class="campo-grupo">
-            <label for="contenido_seccion_6">Contenido:</label>
-            <textarea id="contenido_seccion_6" name="contenido_seccion_6"><?php echo esc_textarea($contenido_seccion_6); ?></textarea>
-        </div>
-        <div class="campo-grupo">
-            <label for="imagen_seccion_6">URL de la imagen:</label>
-            <input type="text" id="imagen_seccion_6" name="imagen_seccion_6" value="<?php echo esc_attr($imagen_seccion_6); ?>" />
-            <p class="descripcion">URL completa de la imagen (dejar en blanco para omitir esta sección)</p>
-            <button type="button" class="button upload-image" data-target="imagen_seccion_6">Seleccionar imagen</button>
-        </div>
-    </div>
-
     <!-- Sección de Presentación -->
     <div class="campos-proyecto">
         <h3>Sección de Presentación (Final)</h3>

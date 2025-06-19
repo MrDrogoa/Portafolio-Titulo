@@ -12,7 +12,7 @@
 </header>
 
 <main>
-    <!-- Proyectos -->
+    <!-- Proyectos ux ui-->
     <section class="max-w-[1300px] m-auto pb-14">
         <div
             class="flex flex-col md:flex-row flex-wrap justify-center px-5 pt-11 w-full gap-5">
@@ -20,7 +20,9 @@
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                     <div
                         class="flex flex-col border-2 border-white rounded-md overflow-hidden max-w-sm m-auto md:m-0">
-                        <?php the_post_thumbnail('post-thumbnail', array('class' => 'w-full h-1/3 md:h-3/4 object-cover')); ?>
+                        <a href="<?php the_permalink(); ?>" class="w-full h-1/3 md:h-3/4 object-cover">
+                            <?php the_post_thumbnail('post-thumbnail', array()); ?>
+                        </a>
                         <div class="px-6 pb-6 pt-5">
                             <a
                                 href="<?php the_permalink(); ?>"

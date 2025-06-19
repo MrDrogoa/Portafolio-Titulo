@@ -50,7 +50,7 @@
                     <img
                         src="<?php echo esc_url(get_post_meta(get_the_ID(), 'imagen_seccion_1', true)); ?>"
                         alt="<?php echo esc_attr(get_post_meta(get_the_ID(), 'titulo_seccion_1', true)); ?>"
-                        class="rounded-md border-[#FF6F61] border-4" />
+                        class="rounded-md m-auto lg:m-0" />
                 </div>
             </div> <!-- arrow-interactive -->
             <div class="lg:flex lg:justify-center hidden relative">
@@ -74,7 +74,7 @@
                     <img
                         src="<?php echo esc_url(get_post_meta(get_the_ID(), 'imagen_seccion_2', true)); ?>"
                         alt="<?php echo esc_attr(get_post_meta(get_the_ID(), 'titulo_seccion_2', true)); ?>"
-                        class="rounded-md border-[#FF6F61] border-4" />
+                        class="rounded-md m-auto lg:m-0" />
                 </div>
                 <div class="w-1/4 hidden lg:block">
                     <img src="<?php echo get_theme_file_uri('./img/arrow-left.svg'); ?>" alt="arrow-left" />
@@ -124,7 +124,7 @@
                 <div class="w-1/4 hidden lg:block">
                     <img src="<?php echo get_theme_file_uri('./img/arrrow-right.svg'); ?>" alt="arrow-right" />
                 </div>
-                <div class="lg:hidden block">
+                <div class="lg:hidden block ">
                     <img
                         src="<?php echo get_theme_file_uri('./img/arrow-bottom-responsive.svg'); ?>"
                         alt="arrow-bottom"
@@ -134,7 +134,7 @@
                     <img
                         src="<?php echo esc_url(get_post_meta(get_the_ID(), 'imagen_seccion_3', true)); ?>"
                         alt="<?php echo esc_attr(get_post_meta(get_the_ID(), 'titulo_seccion_3', true)); ?>"
-                        class="rounded-md border-[#FF6F61] border-4" />
+                        class="rounded-md m-auto lg:m-0" />
                 </div>
             </div> <!-- arrow-interactive -->
             <div class="lg:flex lg:justify-center hidden relative">
@@ -158,7 +158,7 @@
                     <img
                         src="<?php echo esc_url(get_post_meta(get_the_ID(), 'imagen_seccion_4', true)); ?>"
                         alt="<?php echo esc_attr(get_post_meta(get_the_ID(), 'titulo_seccion_4', true)); ?>"
-                        class="rounded-md border-[#FF6F61] border-4" />
+                        class="rounded-md m-auto lg:m-0" />
                 </div>
                 <div class="w-1/4 hidden lg:block">
                     <img src="<?php echo get_theme_file_uri('./img/arrow-left.svg'); ?>" alt="arrow-left" />
@@ -194,106 +194,6 @@
                 </div>
             </div>
 
-            <?php
-            // Sección 5 (opcional) - Solo se muestra si existe contenido
-            if (get_post_meta(get_the_ID(), 'titulo_seccion_5', true) && get_post_meta(get_the_ID(), 'imagen_seccion_5', true)):
-            ?>
-                <!-- metodo-5 (opcional) -->
-                <div
-                    class="mx-5 flex flex-col lg:flex-row justify-center items-center gap-7 md:gap-12 lg:gap-14 pt-11">
-                    <div class="border-2 border-white text-white p-11 rounded-md w-full">
-                        <h3
-                            class="font-[Montserrat] text-[#FF6F61] text-xl md:text-2xl font-semibold text-center">
-                            <?php echo esc_html(get_post_meta(get_the_ID(), 'titulo_seccion_5', true)); ?>
-                        </h3>
-                        <div class="font-[DM Sans] text-white font-normal md:text-lg py-3 md:py-4">
-                            <?php echo wpautop(get_post_meta(get_the_ID(), 'contenido_seccion_5', true)); ?>
-                        </div>
-                    </div>
-                    <div class="w-1/4 hidden lg:block">
-                        <img src="<?php echo get_theme_file_uri('./img/arrrow-right.svg'); ?>" alt="arrow-right" />
-                    </div>
-                    <div class="lg:hidden block">
-                        <img
-                            src="<?php echo get_theme_file_uri('./img/arrow-bottom-responsive.svg'); ?>"
-                            alt="arrow-bottom"
-                            class="w-3/4 md:w-full" />
-                    </div>
-                    <div class="w-full">
-                        <img
-                            src="<?php echo esc_url(get_post_meta(get_the_ID(), 'imagen_seccion_5', true)); ?>"
-                            alt="<?php echo esc_attr(get_post_meta(get_the_ID(), 'titulo_seccion_5', true)); ?>"
-                            class="rounded-md border-[#FF6F61] border-4" />
-                    </div>
-                </div>
-
-                <!-- arrow-interactive después de sección 5 -->
-                <div class="lg:flex lg:justify-center hidden relative">
-                    <div class="absolute -bottom-[100px]">
-                        <img src="<?php echo get_theme_file_uri('./img/arrow-final.svg'); ?>" alt="arrow-final" />
-                    </div>
-                </div>
-                <!-- arrow-bottom -->
-                <div class="w-full flex justify-center pt-7">
-                    <div class="lg:hidden block">
-                        <img
-                            src="<?php echo get_theme_file_uri('./img/arrow-bottom-responsive.svg'); ?>"
-                            alt="arrow-bottom"
-                            class="w-3/4 md:w-full" />
-                    </div>
-                </div>
-            <?php endif; ?>
-
-            <?php
-            // Sección 6 (opcional) - Solo se muestra si existe contenido
-            if (get_post_meta(get_the_ID(), 'titulo_seccion_6', true) && get_post_meta(get_the_ID(), 'imagen_seccion_6', true)):
-            ?>
-                <!-- metodo-6 (opcional) -->
-                <div
-                    class="mx-5 flex flex-col-reverse lg:flex-row justify-center items-center gap-7 md:gap-12 pt-11">
-                    <div class="w-full">
-                        <img
-                            src="<?php echo esc_url(get_post_meta(get_the_ID(), 'imagen_seccion_6', true)); ?>"
-                            alt="<?php echo esc_attr(get_post_meta(get_the_ID(), 'titulo_seccion_6', true)); ?>"
-                            class="rounded-md border-[#FF6F61] border-4" />
-                    </div>
-                    <div class="w-1/4 hidden lg:block">
-                        <img src="<?php echo get_theme_file_uri('./img/arrow-left.svg'); ?>" alt="arrow-left" />
-                    </div>
-                    <div class="lg:hidden block">
-                        <img
-                            src="<?php echo get_theme_file_uri('./img/arrow-bottom-responsive.svg'); ?>"
-                            alt="arrow-bottom"
-                            class="w-3/4 md:w-full" />
-                    </div>
-                    <div class="border-2 border-white text-white p-11 rounded-md w-full">
-                        <h3
-                            class="font-[Montserrat] text-[#FF6F61] text-xl md:text-2xl font-semibold text-center">
-                            <?php echo esc_html(get_post_meta(get_the_ID(), 'titulo_seccion_6', true)); ?>
-                        </h3>
-                        <div class="font-[DM Sans] text-white font-normal md:text-lg py-3 md:py-4">
-                            <?php echo wpautop(get_post_meta(get_the_ID(), 'contenido_seccion_6', true)); ?>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- arrow-interactive después de sección 6 -->
-                <div class="lg:flex lg:justify-center hidden relative">
-                    <div class="absolute -bottom-[100px]">
-                        <img src="<?php echo get_theme_file_uri('./img/arrow-final.svg'); ?>" alt="arrow-final" />
-                    </div>
-                </div>
-                <!-- arrow-bottom -->
-                <div class="w-full flex justify-center pt-7">
-                    <div class="lg:hidden block">
-                        <img
-                            src="<?php echo get_theme_file_uri('./img/arrow-bottom-responsive.svg'); ?>"
-                            alt="arrow-bottom"
-                            class="w-3/4 md:w-full" />
-                    </div>
-                </div>
-            <?php endif; ?>
-
             <!-- final -->
             <section class="max-w-[1300px] m-auto pt-14 md:pt-16">
                 <div
@@ -310,7 +210,7 @@
                     <img
                         src="<?php echo esc_url(get_post_meta(get_the_ID(), 'imagen_presentacion', true)); ?>"
                         alt="<?php echo esc_attr(get_post_meta(get_the_ID(), 'titulo_presentacion', true)); ?>"
-                        class="rounded-md border-[#FFEA00] border-4" />
+                        class="rounded-md " />
                 </div>
             </section> <!-- button contacto -->
             <section class="flex justify-center py-8">
