@@ -37,7 +37,7 @@
                 </div>
                 <div
                     id="menu-content"
-                    class="lg:flex hidden flex-grow justify-between items-center absolute lg:relative lg:top-0 top-28 left-0 w-full lg:w-auto bg-white lg:bg-transparent py-10 px-8 lg:py-0 lg:px-0 z-30">
+                    class="lg:flex hidden flex-grow justify-between items-center absolute lg:relative lg:top-0 top-24 md:top-28 left-0 w-full lg:w-auto bg-white lg:bg-transparent py-10 px-8 lg:py-0 lg:px-0 z-30">
                     <?php wp_nav_menu(
                         array(
                             'theme_location' => 'main-menu',
