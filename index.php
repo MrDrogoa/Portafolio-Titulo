@@ -164,12 +164,12 @@
                     class="font-[Montserrat] text-white text-xl md:text-2xl font-semibold">
                     Diseño Centrado en el Usuario
                 </h3>
-                <div class="font-[DM Sans] text-[#FF6F61] font-medium">
-                    <a href="#" class="hover:text-[#ce4c40] transition-colors">Música</a>
-                    -
-                    <a href="#" class="hover:text-[#ce4c40] transition-colors">Libros</a>
-                    -
-                    <a href="#" class="hover:text-[#ce4c40] transition-colors">Petmatch</a>
+                <div class="flex gap-2 font-[DM Sans] text-[#FF6F61] font-medium">
+                    <p>Womad</a>
+                        -
+                    <p>Libros</a>
+                        -
+                    <p>Petmatch</a>
                 </div>
                 <p class="font-[DM Sans] text-white font-normal md:text-lg">
                     Use metodologias de brief, benchmark, mapa de contenidos y otros
@@ -188,12 +188,12 @@
                     class="font-[Montserrat] text-white text-xl md:text-2xl font-semibold">
                     Desarrollo Front-End
                 </h3>
-                <div class="font-[DM Sans] text-[#FF6F61] font-medium">
-                    <a href="#" class="hover:text-[#ce4c40] transition-colors">Restaurante</a>
-                    -
-                    <a href="#" class="hover:text-[#ce4c40] transition-colors">Viajes</a>
-                    -
-                    <a href="#" class="hover:text-[#ce4c40] transition-colors">Petmatch</a>
+                <div class="flex gap-2 font-[DM Sans] text-[#FF6F61] font-medium">
+                    <p>Restaurante</a>
+                        -
+                    <p>Landings</a>
+                        -
+                    <p>FrontPet</a>
                 </div>
                 <p class="font-[DM Sans] text-white font-normal md:text-lg">
                     Desarrollo de codigo HTML y CSS para diferentes sitios webs asi
@@ -212,12 +212,12 @@
                     class="font-[Montserrat] text-white text-xl md:text-2xl font-semibold">
                     Implementación de Frameworks
                 </h3>
-                <div class="font-[DM Sans] text-[#FF6F61] font-medium">
-                    <a href="#" class="hover:text-[#ce4c40] transition-colors">Portafolio</a>
-                    -
-                    <a href="#" class="hover:text-[#ce4c40] transition-colors">Spotify</a>
-                    -
-                    <a href="#" class="hover:text-[#ce4c40] transition-colors">Supermercado</a>
+                <div class="flex gap-2 font-[DM Sans] text-[#FF6F61] font-medium">
+                    <p>Habitissimo</a>
+                        -
+                    <p>Spotify</a>
+                        -
+                    <p>Firma</a>
                 </div>
                 <p class="font-[DM Sans] text-white font-normal md:text-lg">
                     Proyectos programados con js, php, mysql y el cms de wordpress.
@@ -331,7 +331,7 @@
                 </div>
             </div>
         </div>
-        <div class="p-5 flex justify-center lg:justify-end">
+        <div class="p-5 flex justify-center">
             <button
                 class="font-[DM Sans] py-2 px-5 bg-[#FFEA00] hover:bg-[#FFEE39] text-[#202023] font-semibold rounded-lg hover:-translate-y-2 hover:shadow-lg will-change-transform transition-transform duration-300 ease-in-out mt-5">
                 <a href="<?= site_url() . '/proyectos'; ?>" class="inline-block">Ver más</a>

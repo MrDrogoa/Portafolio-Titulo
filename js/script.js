@@ -229,3 +229,26 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+// button-up
+const upBtn = document.getElementById("btn-scroll-top");
+
+window.addEventListener("scroll", (e) => {
+  let y = document.documentElement.scrollTop;
+  if (y === 0) {
+    upBtn.classList.add("hidden");
+    upBtn.classList.remove("block");
+  } else if (y >= 250) {
+    upBtn.classList.remove("hidden");
+    upBtn.classList.add("block");
+  }
+});
+
+document.addEventListener("click", (e) => {
+  if (e.target === upBtn || e.target.matches(".fa-arrow-up")) {
+    window.scrollTo({
+      behavior: "smooth",
+      top: 0,
+    });
+  }
+});

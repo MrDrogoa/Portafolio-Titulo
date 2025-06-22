@@ -54,6 +54,11 @@
                 Rosales</span>
         </section>
     </footer>
+    <button
+        id="btn-scroll-top"
+        class="hover:bg-[#ce4c40] bg-[#FF6F61] hidden px-4 py-2 rounded-full transition-colors fixed bottom-12 right-6 md:right-8 lg:right-12">
+        <i class="fa-solid fa-arrow-up text-[#202023] text-2xl"></i>
+    </button>
 
     <?php wp_footer() ?>
 
